@@ -277,6 +277,12 @@ html {
   padding-left: 45px !important;
 }
 
+.subheading-name {
+  font-size: 1.5em !important;
+  padding-left: 45px !important;
+  color: #C0C0C0;
+}
+
 .main-name {
   color: #cd5ff8;
 }

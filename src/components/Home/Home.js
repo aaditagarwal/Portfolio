@@ -2,7 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
-import Home2 from "./Home2";
+import AboutCard from "../About/AboutCard";
+import laptopImg from "../../Assets/about.png"
 import Type from "./Type";
 
 function Home() {
@@ -14,13 +15,17 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
+                Hello There! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
               </h1>
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                <strong className="main-name"> AADIT AGARWAL</strong>
               </h1>
+
+              <h3 className="subheading-name">
+                Welcome to my corner on the internet.
+              </h3>
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
@@ -33,7 +38,31 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      <Particle />
+      <Container>
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
+        <Col
+            md={5}
+            style={{ paddingTop: "120px", paddingBottom: "50px" }}
+            className="about-img"
+          >
+            <img src={laptopImg} alt="about" className="img-fluid" />
+          </Col>
+          <Col
+            md={7}
+            style={{
+              justifyContent: "center",
+              paddingTop: "30px",
+              paddingBottom: "50px",
+            }}
+          >
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              <strong className="purple"> Know Who I'M</strong>
+            </h1>
+            <AboutCard />
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 }
