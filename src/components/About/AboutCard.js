@@ -9,24 +9,9 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Aadit Agarwal </span>
-            from <span className="purple"> Andhra Pradesh, India.</span>
-            <br />I am a student at <span className="purple"> IIIT Gwalior, India </span> pursuing Integrated Masters and Bachelors in Information Technology.
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
+            a software engineer / student pursuing Integrated Masters and Bachelors in Information Technology at the <span className="purple"> Indian Institute of Information Technology (IIIT) Gwalior</span>, India.
+            <br />           
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Swimming
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Cycling
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Socializing
-            </li>
-          </ul>
-
         </blockquote>
       </Card.Body>
     </Card>
@@ -34,3 +19,15 @@ function AboutCard() {
 }
 
 export default AboutCard;
+
+{/* <ul>
+  <li className="about-activity">
+    <ImPointRight /> Swimming
+  </li>
+  <li className="about-activity">
+    <ImPointRight /> Cycling
+  </li>
+  <li className="about-activity">
+    <ImPointRight /> Socializing
+  </li>
+</ul> */}

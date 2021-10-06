@@ -1,10 +1,18 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import myImg from "../../Assets/avatar.svg"
 import Particle from "../Particle";
 import AboutCard from "../About/AboutCard";
 import laptopImg from "../../Assets/about.png"
 import Type from "./Type";
+import Tilt from "react-parallax-tilt";
+import {
+  AiFillMail,
+  AiFillGithub,
+  AiFillInstagram,
+  AiOutlineGoogle
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
   return (
@@ -27,17 +35,20 @@ function Home() {
                 Welcome to my corner on the internet.
               </h3>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding: 95, textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img src={homeLogo} alt="home pic" className="img-fluid" />
-            </Col>
+            <Col md={5} style={{ paddingLeft: 100, paddingTop: 60 }}>
+            <Tilt>
+              <img src={myImg} className="img-fluid" alt="avatar" />
+            </Tilt>
+          </Col>
           </Row>
         </Container>
       </Container>
+      
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
@@ -60,6 +71,66 @@ function Home() {
               <strong className="purple"> Know Who I'M</strong>
             </h1>
             <AboutCard />
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12} className="home-about-social">
+            <h1>FIND ME ON</h1>
+            <p>
+              Feel free to <span className="purple">connect </span>with me
+            </p>
+            <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="mailto:agarwal.aadit99@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillMail />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/aaditagarwal/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://github.com/aaditagarwal"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.instagram.com/aaditagarwal/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                <AiOutlineGoogle />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.instagram.com/aaditagarwal/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillInstagram />
+                </a>
+              </li>
+            </ul>
           </Col>
         </Row>
       </Container>
