@@ -551,14 +551,42 @@ html {
   }
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(200, 137, 230, 0.637);
+}
+
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
+
+.tech-icons:hover .overlay {
+  opacity: 2;
+}
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
+}
+
+.fadeText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .quote-card-view {
