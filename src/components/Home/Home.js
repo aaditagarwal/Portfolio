@@ -76,9 +76,6 @@ function Home() {
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
@@ -112,7 +109,7 @@ function Home() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/aaditagarwal/"
+                  href="https://scholar.google.com/citations?hl=en&user=2EOgF5oAAAAJ"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -131,6 +128,9 @@ function Home() {
                 </a>
               </li>
             </ul>
+            <p>
+              Feel free to <span className="purple">connect </span>with me
+            </p>
           </Col>
         </Row>
       </Container>

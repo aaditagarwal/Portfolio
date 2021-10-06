@@ -747,3 +747,36 @@ html {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/* --------------
+---- Contact ----
+---------------*/
+
+.about-section-contact {
+  position: relative !important;
+  padding-top: 130px !important;
+  padding-bottom: 27px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+
+.about-section-contact h1 {
+  padding-left: 50px;
+}
+
+.myAvtar-contact {
+  color: white;
+  left: 50px;
+  justify-content: center !important;
+  /* padding-top: 11em !important; */
+  padding-right: 15em;
+  padding-bottom: 42px;
+}
+
+.home-about-social-contact {
+  text-align: center !important;
+  /* padding-left: 200px; */
+  left: 150px;
+  padding-top: 100px;
+  color: white !important;
+}
