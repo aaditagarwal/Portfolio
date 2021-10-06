@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Particle from "../Particle";
 import Home2 from "../Home/Home2";
 import Github from "./Github";
@@ -19,7 +19,7 @@ function About() {
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          <strong className="purple">Tools</strong>
         </h1>
         <Toolstack />
 
