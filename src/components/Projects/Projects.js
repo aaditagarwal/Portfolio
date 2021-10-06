@@ -3,12 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.jpeg";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import graphRec from "../../Assets/Projects/graphRec.png";
+import netIntruder from "../../Assets/Projects/netIntruder.png";
+import wellSAP from "../../Assets/Projects/wellSAP.png";
+import solveNet from "../../Assets/Projects/solveNet.png";
+import activeNet from "../../Assets/Projects/activeNet.png";
+import fitPred from "../../Assets/Projects/fitPred.png";
 
 function Projects() {
   return (
@@ -16,72 +16,79 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My <strong className="purple"> Personal Projects </strong>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={graphRec}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title="GraphRec"
+              description="Developed a Collaborative Filtering based Recommender System built by Engineering a Knowledge Graph to provide semantic knowledge of User Item information to the system along side Extracted the visualizations of the Knowledge Graph to produce Explainability of the recommendation system. At the end Designed a Web Application for the recommender system built on Amazon e-commerce products."
+              link="https://github.com/aaditagarwal/GraphRec"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={netIntruder}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
+              title="Net Intruder"
+              description="Designed anomaly detection based system to detect malicious activities in real-time network traffic. Built on network flow generated from packet data to incorporate continuous nature of network traffic. Developed 3 individual ML classifiers to improve detection of known attacks amongst exposed anomalies."
+              link="https://github.com/aaditagarwal/NetIntruder"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={wellSAP}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              link="https://github.com/soumyajit4419/Editor.io"
+              title="WellSAP"
+              description="Identification of metrics related to wellness of an employee to provide a Wellness score, Both physical and mental wellbeing is considered. Consideration of most of the organization’s population to avoid skewed data. Identification of the collective metrics to come up with more meaningful strategy for wellness programs."
+              link="https://github.com/aaditagarwal/WellSAP"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={activeNet}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              link="https://github.com/soumyajit4419/Bits-0f-C0de"
+              title="ActiveNet"
+              description="Developed a pipeline to detect levels of activeness in real-time, using a single RGB image of a target person. We introduce a novel pose encoding technique, which encodes the 2-Dimensional keypoints extracted using Human Pose Estimation (HPE) algorithm."
+              link="https://github.com/aaditagarwal/ActiveNet"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={fitPred}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              link="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="Fitment Predictor"
+              description="A Kivy based application to determine the fitment of an employee from the supply database for particular demand heuristics. A Fitment Score is calculated and based upon which the employee is categorized with the Fitment Segments."
+              link="https://github.com/aaditagarwal/Fitment-Predictor"
             />
           </Col>
 
           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={solveNet}
+              isBlog={false}
+              title="SolveNet"
+              description="A system which can first segment the digits and symbols in the image. Then it predicts the segmented text character by character to recognize the text. Once the text is recognized, the text needs to be formulated into a mathematical expression, which can be calculated to achieve the final goal of the system, i.e., evaluate an image of handwritten mathematical expressions."
+              link="https://github.com/aaditagarwal/SolveNet"
+            />
+          </Col>
+
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="Functional Group Determination"
+              description="Developed a predictive model which can predict the composition and underlying structure (Functional Groups present in the compound) of a new organic compound from its FTIR data given being trained on structures of different compounds and their Infrared Spectroscopy."
+              link="https://github.com/aaditagarwal/prediction_of_functional_groups"
             />
-          </Col>
+          </Col> */}
+
         </Row>
       </Container>
     </Container>
