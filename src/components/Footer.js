@@ -1,10 +1,7 @@
 import React from "react";
+import logo from "../Assets/logo.png"
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
@@ -14,10 +11,10 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Developed by Aadit Agarwal</h3>
+          <h3>Developed by Aadit Agarwal <img src={logo} alt="Logo"/> </h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year}</h3>
+          <h3>Copyright <a href="https://github.com/soumyajit4419/Portfolio">SB</a> © {year}</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
@@ -39,16 +36,6 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/aaditagarwal/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
               </a>
             </li>
           </ul>
