@@ -149,10 +149,12 @@ html {
 }
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
+  /* height: auto !important;
+  width: 100% !important; */
 }
 
 .logo {
-  height: 1.4em !important;
+  height: 2.5em !important;
   width: 2.5em !important;
 }
 
@@ -257,6 +259,7 @@ html {
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 100%;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
@@ -269,17 +272,17 @@ html {
 
 .heading {
   font-size: 2.4em !important;
-  padding-left: 50px !important;
+  padding-left: 99px !important;
 }
 
 .heading-name {
   font-size: 2.5em !important;
-  padding-left: 45px !important;
+  padding-left: 99px !important;
 }
 
 .subheading-name {
   font-size: 1.5em !important;
-  padding-left: 45px !important;
+  padding-left: 99px !important;
   color: #C0C0C0;
 }
 
@@ -288,7 +291,7 @@ html {
 }
 
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
+  font-size: 2em !important;
   color: #be6adf !important;
   font-weight: 600 !important;
 }
@@ -299,7 +302,7 @@ html {
 
 @media (max-width: 767px) {
   .Typewriter__wrapper {
-    font-size: 1.4em !important;
+    font-size: 1.3em !important;
     font-weight: 500 !important;
     position: absolute !important;
   }
@@ -310,13 +313,13 @@ html {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  padding-top: 11em !important;
 }
 
 @media (max-width: 767px) {
   .myAvtar {
     padding-top: 2em !important;
-    padding-bottom: 2em !important;
+    padding-bottom: 1em !important;
   }
 }
 
@@ -428,9 +431,16 @@ html {
   }
 }
 
+
 .footer h3 {
   font-size: 1em;
   color: white !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
+.footer a {
+  font-size: 1em;
+  color:white !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -438,6 +448,11 @@ html {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
   padding: 0 !important;
+}
+
+.footer img {
+  height: 2em !important;
+  width: 2em !important;
 }
 
 .blockquote-footer {
@@ -475,47 +490,10 @@ html {
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
 
-.blog-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
-}
-
-.blog-card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-}
-
-.blog-link {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-.blog-link:hover {
-  cursor: pointer !important;
-}
-
-.blog-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
-}
-
 .card-img-top {
   padding: 20px !important;
   opacity: 0.8 !important;
   border-radius: 10px !important;
-}
-
-.blog-img {
-  padding: 0px !important;
-  opacity: 0.8 !important;
-  border-radius: 0px !important;
 }
 
 .btn-primary {
