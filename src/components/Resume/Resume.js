@@ -1,98 +1,100 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
-import axios from "axios";
-import pdf from "../../Assets/Soumyajit-Behera.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
 function Resume() {
-  const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
-  const [spojRank, upadteSpojRank] = useState(0);
-  const [hackerrank, upadteHackerank] = useState(0);
-  const [sem, upadateSem] = useState(0);
-  const [cgpa, upadteCgpa] = useState(0);
-
-  useEffect(() => {
-    axios
-      .get(uri)
-      .then((res) => {
-        upadteSpojRank(res.data.message[0].spojRank);
-        upadteHackerank(res.data.message[1].hackerrank);
-        upadteCgpa(res.data.message[2].cgpa);
-        upadateSem(res.data.message[3].sem);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
 
   return (
     <Container fluid className="resume-section">
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button variant="primary" href={pdf} target="_blank">
+          <Button variant="primary" href={"https://bit.ly/aaditagarwal_resume"} target="_blank">
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;Download Resume
           </Button>
         </Row>
         <Row className="resume">
           <Col md={6} className="resume-left">
-            <h3 className="resume-title">Experience</h3>
+            <h3 className="resume-title">Work Experience</h3>
             <Resumecontent
-              title="Frontend Developer Intern [Flash Tech]"
-              date="July 2021 - September 2021"
+              company="Numtra LLC"
+              title="Software Engineer Summer'21 Intern"
+              date="May 2021 - September 2021"
+              link="https://numtra.com/"
               content={[
-                "Worked on the development of an E-commerce website",
-                "Redesigned Wigme.com and created features to enhance the user experience and optimized designs for smartphones.",
-                " Translated designs and wireframes into a highly responsive user interface and reusable components using React.js.",
-                "Used Back-End APIs to display data using the Custom Components, library Components, and Redux.",
-                "Used JIRA as the bug tracking system to track and maintain the history of bugs/issues on an everyday basis.",
+                "Fabricated Microsoft Power Platform plug-ins for consuming and authoring AI by 1,000’s of business users.",
+                " Developed an interface application improving efficiency by 40% to integrate across business tools.",
+                "Improved PaaS API response time by 20% with remodeled pipeline and added OAuth2 authentication.",
+                " Developed a React application with REST APIs handling and optimized Data Management for secure operations."
               ]}
             />
-            <h3 className="resume-title">Extracurricular Activities</h3>
             <Resumecontent
-              title="Web Developer [Pantheon-2019 Technical Fest of BIT Mesra]"
+              company="TEAL India"
+              title="Data Science Winter'21 Intern"
+              date="November 2020 - April 2021"
+              link="https://www.tealindia.in/"
               content={[
-                "Worked on building front-end UI design using HTML5, CSS3, JavaScript jQuery, and building API routes using Node and express.js.",
+                "Designed and engineered 2 data-backed solutions and generated 3 analytical reports for real-estate data.",
+                "Developed data transformer pipelines for processing legal records across 7 cities and 2 databases.",
+                "Built data pipelines for Data Science ecosystem automation to boost development timeline by 15%."
               ]}
             />
+            <h3 className="resume-title">Publications</h3>
+            <Resumecontent
+              company="CoDS-COMAD 2021"
+              title="ActiveNet"
+              link="https://cods-comad.in/2021/accepted_papers.html"
+              date="October 2020"
+              content={[
+                "Published paper entitled ActiveNet for Demo Track of The ACM India Joint International Conference on Data Science and Management of Data 2021",
+              ]}
+            />            
           </Col>
+
           <Col md={6} className="resume-right">
             <h3 className="resume-title">Education</h3>
             <Resumecontent
-              title="IMSC MATHS AND COMPUTING [BIT Mesra, Ranchi] "
-              date="2018 - Present"
-              content={[`CGPA: ${cgpa} (Till ${sem}th Sem)`]}
-            />
-
-            <h3 className="resume-title">Publications</h3>
-            <Resumecontent
-              title=""
+              company="Indian Institute of Information Technology and Management Gwalior"
+              date="August 2018 - May 2023 (Expected)"
               content={[
-                "Article entitled An Overlapping Sliding Window and Combined Feature based Emotion Recognition System for EEG Signals publised in Emerald Publication;10.1108/ACI-05-2021-0130",
+                "Integrated Masters and Bachelors in Information Technology",
+                "CGPA: 7.94 (Till 6th Sem)",
+                "Coursework: Operating Systems, Computer Networking, OOPS, Database Management, Software Engineering"
               ]}
             />
+            <h3 className="resume-title">Leadership Experience</h3>
+            <Resumecontent
+              title="Head Of Department and Event Organizer"
+              company="Aurora, IIIT Gwalior"
+              date="October 2019 - February 2020"
+              content={[
+                "Headed the Calling Department particularly the Campus Ambassador Programme.",
+                "Event organizer of Informal Events (Quizzing events)."
+              ]}
+            />
+            <Resumecontent
+            title="Executive"
+            company="Student Activity Council, IIIT Gwalior"
+            date="August 2019 - December 2019"
+            content={[
+              "An active executive member of the Student Activity Council (SAC), IIITM Gwalior.",
+              "Been actively involved in organizing several cultural events in the institution and dealing in event management."
+            ]}
+            />
 
-            <h3 className="resume-title">Ranks and Achivements</h3>
+            <h3 className="resume-title">Achivements</h3>
             <Resumecontent
               title=""
               content={[
-                `Current rank in Spoj ${spojRank}`,
-                `Current rank in HackerRank  ${hackerrank}`,
-                "Top Performer in Code-Break 1.0",
-                "Participant in Hack-A-Bit 2019",
+                "Winner of E&Y GDS Radio Hackathon - AI in Capacity Management",
+                "Winner of Game of Codes Hackathon organized by IIIT, Una - Machine Learning Team"
               ]}
             />
           </Col>
-        </Row>
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button variant="primary" href={pdf} target="_blank">
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
         </Row>
       </Container>
     </Container>
