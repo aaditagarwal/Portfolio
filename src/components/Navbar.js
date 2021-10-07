@@ -5,13 +5,14 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
 import {
+  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
   AiOutlineMail
 } from "react-icons/ai";
-
-import { CgFileDocument } from "react-icons/cg";
+import { CgFileDocument, CgGitFork } from "react-icons/cg";
+import Button from "react-bootstrap/Button";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -99,6 +100,17 @@ function NavBar() {
               >
                 <AiOutlineMail style={{ marginBottom: "2px" }} /> Contact Me
               </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item className="fork-btn">
+              <Button
+                href="https://github.com/aaditagarwal/webiste-portfolio"
+                target="_blank"
+                className="fork-btn-inner"
+              >
+                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                <AiFillStar style={{ fontSize: "1.1em" }} />
+              </Button>
             </Nav.Item>
 
           </Nav>
