@@ -128,9 +128,6 @@ function Home() {
                 </a>
               </li>
             </ul>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
           </Col>
         </Row>
       </Container>
