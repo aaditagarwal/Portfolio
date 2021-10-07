@@ -95,7 +95,7 @@ const Contact = () => {
                                     <CssTextField
                                         sx={{ m: 1.5 }}
                                         inputProps={{ style: { color: 'white' } }}
-                                        InputLabelProps={{ style: { color: 'white' } }}
+                                        InputLabelProps={{ style: { color: '#68187a' } }}
                                         fullWidth
                                         required
                                         color="primary"
@@ -114,7 +114,7 @@ const Contact = () => {
                                     <CssTextField
                                         sx={{ m: 1.5 }}
                                         inputProps={{ style: { color: 'white' } }}
-                                        InputLabelProps={{ style: { color: 'white' } }}
+                                        InputLabelProps={{ style: { color: '#68187a' } }}
                                         fullWidth
                                         required
                                         color="primary"
@@ -133,7 +133,7 @@ const Contact = () => {
                                     <CssTextField
                                         sx={{ m: 1.5 }}
                                         inputProps={{ style: { color: 'white' } }}
-                                        InputLabelProps={{ style: { color: 'white' } }}
+                                        InputLabelProps={{ style: { color: '#68187a' } }}
                                         fullWidth
                                         color="primary"
                                         margin="dense"
@@ -151,7 +151,7 @@ const Contact = () => {
                                     <CssTextField
                                         sx={{ m: 1.5 }}
                                         inputProps={{ style: { color: 'white' } }}
-                                        InputLabelProps={{ style: { color: 'white' } }}
+                                        InputLabelProps={{ style: { color: '#68187a' } }}
                                         multiline
                                         rows = {7}
                                         fullWidth
