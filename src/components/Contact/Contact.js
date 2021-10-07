@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 
@@ -10,74 +10,73 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa"
 
-import { FormControl, TextField, Button } from "@material-ui/core"
+import { FormControl, TextField } from "@material-ui/core"
 import { makeStyles } from '@mui/styles';
-// import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider, createTheme } from '@material-ui/core/styles';
+import { styled } from '@mui/material/styles';
 
 import emailjs from "emailjs-com"
 import ApiKey from "../../Assets/ApiKey";
 
 const Contact = () => {
 
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [subject, setSubject] = useState("")
-    const [message, setMessage] = useState("")
+    const apiKey = ApiKey()
+    const form = useRef()
 
-    // const theme = createMuiTheme({
-    //     palette: {
-    //         primary: {
-    //             light: "#af52bf",
-    //             main: "#68187a",
-    //             dark: "#6d1b7b",
-    //             contrastText: "ffffff"
-    //         }
-    //     }
-    // })
+    const CssTextField = styled(TextField)({
+        '& label.Mui-focused': {
+          color: "#68187a"
+        },
+        '& .MuiInput-underline:after': {
+          borderBottomColor: "#68187a",
+          color: "#68187a"
+        },
+        '& .MuiOutlinedInput-root': {
+          '& fieldset': {
+            borderColor: '#68187a'
+          },
+          '&:hover fieldset': {
+            borderColor: '#68187a'
+          },
+          '&.Mui-focused fieldset': {
+            borderColor: "#68187a"
+          },
+        }
+      });
+
+    const theme = createTheme({
+        palette: {
+          primary: {
+            light: "#af52bf",
+            main: "#68187a",
+            dark: "#6d1b7b",
+            contrastText: "#ffffff"
+          }
+        }
+      })
 
     const useStyles = makeStyles((theme) => ({
         text: {
             width: 400
         }
     }))
+    const classes = useStyles()
 
-    const classes = useStyles();
-    const apiKey = ApiKey()
-
-    const handleChange = (e) => {
-        const {name, value} = e.target
-        if(name==="name"){
-            setName(value)
-        }
-        else if(name==="email"){
-            setEmail(value)
-        }
-        else if(name==="subject"){
-            setSubject(value)
-        }
-        else if(name==="message"){
-            setMessage(value)
-        }
-        else{
-            // e.preventDefault()
-            emailjs.sendForm(
-                apiKey.SERVICE_ID,
-                apiKey.TEMPLATE_ID,
-                {
-                    "name":name,
-                    "email":email,
-                    "subject":subject,
-                    "message":message
-                },
-                apiKey.USER_ID,
-            )
-            .then((result) => {
-                alert("Message Sent, We will get back to you shortly", result.text)
-            })
-            .catch((error) => {
-                alert("An error occurred, Please try again", error.text)
-            })
-        }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm(
+            apiKey.SERVICE_ID,
+            apiKey.TEMPLATE_ID,
+            form.current,
+            apiKey.USER_ID,
+        )
+        .then((result) => {
+            alert("Message Sent, We will get back to you shortly", result.text)
+        })
+        .catch((error) => {
+            alert("An error occurred, Please try again", error.text)
+        })
+        e.target.reset()
     }
 
     return(
@@ -89,84 +88,90 @@ const Contact = () => {
 
                     <Col md={4} className="myAvtar-contact">
                         <h1> Contact Me </h1>
-                        <form>
+                        <form ref={form} onSubmit={handleSubmit}>
+
                             <FormControl className={classes.text} >
-                                <TextField
-                                    fullWidth
-                                    required
-                                    color="primary"
-                                    margin="dense"
-                                    id="name"
-                                    name="name"
-                                    label="Enter Name"
-                                    variant="outlined"
-                                    value={name}
-                                    onChange={handleChange}
-                                />
+                                <ThemeProvider theme={theme}>
+                                    <CssTextField
+                                        sx={{ m: 1.5 }}
+                                        inputProps={{ style: { color: 'white' } }}
+                                        InputLabelProps={{ style: { color: 'white' } }}
+                                        fullWidth
+                                        required
+                                        color="primary"
+                                        margin="dense"
+                                        id="name"
+                                        label="Enter Name"
+                                        variant="outlined"
+                                    />
+                                </ThemeProvider>
                             </FormControl>
 
                             <br />
 
                             <FormControl className={classes.text} >
-                                <TextField
-                                    fullWidth
-                                    required
-                                    color="primary"
-                                    margin="dense"
-                                    id="email"
-                                    name="email"
-                                    label="Enter Email"
-                                    variant="outlined"
-                                    value={email}
-                                    onChange={handleChange}
-                                />
+                                <ThemeProvider theme={theme}>
+                                    <CssTextField
+                                        sx={{ m: 1.5 }}
+                                        inputProps={{ style: { color: 'white' } }}
+                                        InputLabelProps={{ style: { color: 'white' } }}
+                                        fullWidth
+                                        required
+                                        color="primary"
+                                        margin="dense"
+                                        id="email"
+                                        label="Enter Email"
+                                        variant="outlined"
+                                    />
+                                </ThemeProvider>
                             </FormControl>
 
                             <br />
 
                             <FormControl className={classes.text} >
-                                <TextField
-                                    fullWidth
-                                    color="primary"
-                                    margin="dense"
-                                    id="subject"
-                                    name="subject"
-                                    label="Enter Subject"
-                                    variant="outlined"
-                                    value={subject}
-                                    onChange={handleChange}
-                                />
+                                <ThemeProvider theme={theme}>
+                                    <CssTextField
+                                        sx={{ m: 1.5 }}
+                                        inputProps={{ style: { color: 'white' } }}
+                                        InputLabelProps={{ style: { color: 'white' } }}
+                                        fullWidth
+                                        color="primary"
+                                        margin="dense"
+                                        id="subject"
+                                        label="Enter Subject"
+                                        variant="outlined"
+                                    />
+                                </ThemeProvider>
                             </FormControl>
 
                             <br />
 
                             <FormControl className={classes.text} >
-                                <TextField
-                                    multiline
-                                    rows = {7}
-                                    fullWidth
-                                    required
-                                    color="primary"
-                                    margin="dense"
-                                    id="message"
-                                    name="message"
-                                    label="Enter Message"
-                                    variant="outlined"
-                                    value={message}
-                                    onChange={handleChange}
-                                />
+                                <ThemeProvider theme={theme}>
+                                    <CssTextField
+                                        sx={{ m: 1.5 }}
+                                        inputProps={{ style: { color: 'white' } }}
+                                        InputLabelProps={{ style: { color: 'white' } }}
+                                        multiline
+                                        rows = {7}
+                                        fullWidth
+                                        required
+                                        color="primary"
+                                        margin="dense"
+                                        id="message"
+                                        label="Enter Message"
+                                        variant="outlined"
+                                    />
+                                </ThemeProvider>
                             </FormControl>
 
                             <br />
-                            <br />
 
-                            <Button
-                                variant="outlined"
-                                color="white"
-                                onClick={handleChange}
-                            >
-                                Submit
-                            </Button>
+                            <input
+                            className="submit-button"
+                            type="submit"
+                            value="Submit"/>
+
                         </form>
                     </Col>
 
