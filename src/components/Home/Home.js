@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg"
+import myImg from "../../Assets/avatar.png"
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import laptopImg from "../../Assets/about.png"
@@ -40,11 +40,11 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingLeft: 100, paddingTop: 60 }}>
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col>
+            <Col md={5} className="myAvtar-home">
+              <Tilt>
+                <img src={myImg} className="img-fluid" alt="avatar" />
+              </Tilt>
+            </Col>
           </Row>
         </Container>
       </Container>

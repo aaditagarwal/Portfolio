@@ -256,7 +256,6 @@ html {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -318,6 +317,17 @@ html {
 
 @media (max-width: 767px) {
   .myAvtar {
+    padding-top: 2em !important;
+    padding-bottom: 1em !important;
+  }
+}
+
+.myAvtar-home {
+  justify-content: center !important;
+}
+
+@media (max-width: 767px) {
+  .myAvtar-home {
     padding-top: 2em !important;
     padding-bottom: 1em !important;
   }
