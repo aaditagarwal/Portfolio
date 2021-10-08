@@ -57,7 +57,7 @@ const Contact = () => {
 
     const useStyles = makeStyles((theme) => ({
         text: {
-            width: 400
+            width: 'calc(100% - 5px)'
         }
     }))
     const classes = useStyles()
@@ -178,59 +178,59 @@ const Contact = () => {
                     <Col md={8} className="home-about-social-contact">
                         <h1>FIND ME ON</h1>
                         <ul className="home-about-social-links">
-                        <li className="social-icons">
-                            <a
-                            href="mailto:agarwal.aadit99@gmail.com"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="icon-colour  home-social-icons"
-                            >
-                            <AiFillMail />
-                            </a>
-                        </li>
-                        <li className="social-icons">
-                            <a
-                            href="https://www.linkedin.com/in/aaditagarwal/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="icon-colour  home-social-icons"
-                            >
-                            <FaLinkedinIn />
-                            </a>
-                        </li>
-                        <li className="social-icons">
-                            <a
-                            href="https://github.com/aaditagarwal"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="icon-colour  home-social-icons"
-                            >
-                            <AiFillGithub />
-                            </a>
-                        </li>
-                        <li className="social-icons">
-                            <a
-                            href="https://scholar.google.com/citations?hl=en&user=2EOgF5oAAAAJ"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="icon-colour home-social-icons"
-                            >
-                            <AiOutlineGoogle />
-                            </a>
-                        </li>
-                        <li className="social-icons">
-                            <a
-                            href="https://www.instagram.com/aaditagarwal/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="icon-colour home-social-icons"
-                            >
-                            <AiFillInstagram />
-                            </a>
-                        </li>
+                            <li className="social-icons">
+                                <a
+                                href="mailto:agarwal.aadit99@gmail.com"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="icon-colour  home-social-icons"
+                                >
+                                <AiFillMail />
+                                </a>
+                            </li>
+                            <li className="social-icons">
+                                <a
+                                href="https://www.linkedin.com/in/aaditagarwal/"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="icon-colour  home-social-icons"
+                                >
+                                <FaLinkedinIn />
+                                </a>
+                            </li>
+                            <li className="social-icons">
+                                <a
+                                href="https://github.com/aaditagarwal"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="icon-colour  home-social-icons"
+                                >
+                                <AiFillGithub />
+                                </a>
+                            </li>
+                            <li className="social-icons">
+                                <a
+                                href="https://scholar.google.com/citations?hl=en&user=2EOgF5oAAAAJ"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="icon-colour home-social-icons"
+                                >
+                                <AiOutlineGoogle />
+                                </a>
+                            </li>
+                            <li className="social-icons">
+                                <a
+                                href="https://www.instagram.com/aaditagarwal/"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="icon-colour home-social-icons"
+                                >
+                                <AiFillInstagram />
+                                </a>
+                            </li>
                         </ul>
                         <p>
-                        Feel free to <span className="purple">connect </span>with me
+                            Feel free to <span className="purple">connect </span>with me
                         </p>
                     </Col>
                 </Row>

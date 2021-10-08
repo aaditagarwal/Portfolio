@@ -255,6 +255,7 @@ html {
 
 .home-section {
   position: relative;
+  background-image: var(--section-background-color) !important;
   z-index: -1;
   background-position: top center;
   background-repeat: no-repeat;
@@ -264,25 +265,30 @@ html {
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 6rem 0 10rem !important;
   color: whitesmoke;
   text-align: left;
 }
 
 .heading {
   font-size: 2.4em !important;
-  padding-left: 99px !important;
+  /* padding-left: 99px !important; */
 }
 
 .heading-name {
   font-size: 2.5em !important;
-  padding-left: 99px !important;
+  /* padding-left: 99px !important; */
 }
 
 .subheading-name {
   font-size: 1.5em !important;
-  padding-left: 99px !important;
+  /* padding-left: 99px !important; */
   color: #C0C0C0;
+}
+
+.home-typeWritter {
+  padding-top: 95px;
+  text-align: "left" 
 }
 
 .main-name {
@@ -312,7 +318,7 @@ html {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 11em !important;
+  /* left: 3em; */
 }
 
 @media (max-width: 767px) {
@@ -322,34 +328,23 @@ html {
   }
 }
 
-.myAvtar-home {
-  justify-content: center !important;
-}
-
-@media (max-width: 767px) {
-  .myAvtar-home {
-    padding-top: 2em !important;
-    padding-bottom: 1em !important;
-  }
-}
-
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;
-  padding-top: 10px !important;
 }
 
 .home-about-description {
   color: white !important;
-  padding-top: 40px !important;
-  padding-bottom: 20px !important;
+  padding-top: -5px !important;
+  padding-bottom: 5px !important;
   text-align: center;
+  right: 1em;
 }
 
 .home-about-body {
-  padding-top: 50px;
-  font-size: 1.2em !important;
-  text-align: left;
+  padding-top: 30px;
+  font-size: 1.1em !important;
+  text-align: justify;
 }
 
 .home-about-social {
@@ -473,7 +468,7 @@ html {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 100px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
 }
@@ -765,30 +760,27 @@ html {
 .about-section-contact {
   position: relative !important;
   padding-top: 130px !important;
-  /* padding-bottom: 27px !important; */
   background-image: var(--section-background-color) !important;
   color: white !important;
 }
 
 .myAvtar-contact {
+  position: relative;
   color: white;
-  left: 50px;
-  justify-content: center !important;
-  /* padding-top: 11em !important; */
-  padding-right: 15em;
+  /* justify-content: center !important; */
   padding-bottom: 42px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.myAvtar-contact h1 {
+  margin-left: 25px;
 }
 
 .home-about-social-contact {
   text-align: center !important;
-  /* padding-left: 200px; */
-  left: 150px;
   padding-top: 150px;
   color: white !important;
-}
-
-.contact-form {
-  color: white;
 }
 
 .submit-button {
@@ -797,8 +789,9 @@ html {
   height: 40px;
   width: 100px;
   font-size: 0.95em;
-  margin-left: 40px;
+  margin-left: 25px;
   border-color: #68187a;
   border-radius: 5px;
+  border-width: thin;
   color: white;
 }
