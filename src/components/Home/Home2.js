@@ -7,8 +7,8 @@ function Home2() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Aadit Agarwal </span>
-            a software engineer pursuing Integrated Masters and Bachelors in Information Technology at the
+            Hi Everyone, I am <span className="purple">Aadit Agarwal </span>,
+            a student pursuing Integrated Masters and Bachelors in Information Technology at the
             <span className="purple"> Indian Institute of Information Technology (IIIT) Gwalior</span>, India.
             I am also a <span className="purple">software engineer</span> and love to build products which can produce impact at scale.
             <br />
