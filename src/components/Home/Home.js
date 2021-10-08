@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.png"
+import myImg from "../../Assets/avatar.svg"
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import laptopImg from "../../Assets/about.png"
