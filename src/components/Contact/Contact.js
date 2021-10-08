@@ -101,6 +101,7 @@ const Contact = () => {
                                         color="primary"
                                         margin="dense"
                                         id="name"
+                                        name="name"
                                         label="Enter Name"
                                         variant="outlined"
                                     />
@@ -120,6 +121,7 @@ const Contact = () => {
                                         color="primary"
                                         margin="dense"
                                         id="email"
+                                        name="email"
                                         label="Enter Email"
                                         variant="outlined"
                                     />
@@ -138,6 +140,7 @@ const Contact = () => {
                                         color="primary"
                                         margin="dense"
                                         id="subject"
+                                        name="subject"
                                         label="Enter Subject"
                                         variant="outlined"
                                     />
@@ -159,6 +162,7 @@ const Contact = () => {
                                         color="primary"
                                         margin="dense"
                                         id="message"
+                                        name="message"  
                                         label="Enter Message"
                                         variant="outlined"
                                     />
