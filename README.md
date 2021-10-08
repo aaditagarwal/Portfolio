@@ -36,3 +36,9 @@ Built using technologies:
 **🎨 Styled with React-Bootstrap and Css with easy to customize colors**
 
 **📱 Fully Responsive**
+
+<br />
+
+<hr>
+<br />
+<center>Copyright <a href="https://github.com/soumyajit4419/Portfolio">SB</a> 2021</center>
