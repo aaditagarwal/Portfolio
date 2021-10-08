@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg"
 import Particle from "../Particle";
-import AboutCard from "../About/AboutCard";
+import Home2 from "./Home2";
 import laptopImg from "../../Assets/about.png"
 import Type from "./Type";
 import Tilt from "react-parallax-tilt";
@@ -70,7 +70,7 @@ function Home() {
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               <strong className="purple"> Know Who I'M</strong>
             </h1>
-            <AboutCard />
+            <Home2 />
           </Col>
         </Row>
         <Row>
