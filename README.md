@@ -2,8 +2,9 @@
   Portfolio Website<br/>
   <a href="https://aaditagarwal.in/" target="_blank">https://aaditagarwal.in/</a>
 </h2>
+<br />
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img-devices.png" />
+  <img alt="Demo" height="500" width="1130" src="./Images/readme-img-devices.png" />
 </div>
 
 <br/>
@@ -23,10 +24,11 @@ My personal portfolio <b><a href="https://aaditagarwal.in/" target="_blank">http
 Built using technologies:
 
 - ReactJS
-- NodeJS
+- JSX
 - CSS3
 - VsCode
 - Vercel
+- Google Analytics
 - EmailJS
 
 ## Features

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 
@@ -169,6 +169,7 @@ const Contact = () => {
                                 </ThemeProvider>
                             </FormControl>
 
+                            <br />
                             <br />
 
                             <input

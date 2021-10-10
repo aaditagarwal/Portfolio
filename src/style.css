@@ -260,7 +260,7 @@ html {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
-  padding-bottom: 30px !important;
+  padding-bottom: 70px !important;
   padding-top: 30px !important;
 }
 
@@ -760,6 +760,7 @@ html {
 .about-section-contact {
   position: relative !important;
   padding-top: 130px !important;
+  padding-bottom: 65px;
   background-image: var(--section-background-color) !important;
   color: white !important;
 }
@@ -792,6 +793,6 @@ html {
   margin-left: 25px;
   border-color: #68187a;
   border-radius: 5px;
-  border-width: thin;
+  border-width: 1px;
   color: white;
 }
