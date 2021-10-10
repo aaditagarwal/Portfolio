@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 
