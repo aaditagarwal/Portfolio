@@ -29,7 +29,7 @@ function Resume() {
                 "Fabricated Microsoft Power Platform plug-ins for consuming and authoring AI by 1,000’s of business users.",
                 " Developed an interface application improving efficiency by 40% to integrate across business tools.",
                 "Improved PaaS API response time by 20% with remodeled pipeline and added OAuth2 authentication.",
-                " Developed a React application with REST APIs handling and optimized Data Management for secure operations."
+                " Developed a React application with REST APIs handling, and optimized Data Management for secure operations."
               ]}
             />
             <Resumecontent
@@ -40,7 +40,7 @@ function Resume() {
               content={[
                 "Designed and engineered 2 data-backed solutions and generated 3 analytical reports for real-estate data.",
                 "Developed data transformer pipelines for processing legal records across 7 cities and 2 databases.",
-                "Built data pipelines for Data Science ecosystem automation to boost development timeline by 15%."
+                "Built data pipelines for Data Science ecosystem automation to boost development time by 15%."
               ]}
             />
             <h3 className="resume-title">Publications</h3>
