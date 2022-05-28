@@ -9,6 +9,7 @@ import wellSAP from "../../Assets/Projects/wellSAP.png";
 import solveNet from "../../Assets/Projects/solveNet.png";
 import activeNet from "../../Assets/Projects/activeNet.png";
 import fitPred from "../../Assets/Projects/fitPred.png";
+import docMeta from "https://user-images.githubusercontent.com/43996118/163048767-a4689275-5390-4722-a053-d7f02a067868.png";
 
 function Projects() {
   return (
@@ -19,6 +20,16 @@ function Projects() {
           My <strong className="purple"> Personal Projects </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={docMeta}
+              isBlog={false}
+              title="Document Metaverse"
+              description="Developed a text document analyzer with 6 different on-demand services using Natural Language Processing."
+              link="https://github.com/aaditagarwal/documentMetaverse"
+            />
+          </Col>
+    
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={graphRec}
@@ -56,16 +67,6 @@ function Projects() {
               title="ActiveNet"
               description="Developed a pipeline to detect levels of activeness in real-time, using a single RGB image of a target person. We introduce a novel pose encoding technique, which encodes the 2-Dimensional keypoints extracted using Human Pose Estimation (HPE) algorithm."
               link="https://github.com/aaditagarwal/ActiveNet"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={fitPred}
-              isBlog={false}
-              title="Fitment Predictor"
-              description="A Kivy based application to determine the fitment of an employee from the supply database for particular demand heuristics. A Fitment Score is calculated and based upon which the employee is categorized with the Fitment Segments."
-              link="https://github.com/aaditagarwal/Fitment-Predictor"
             />
           </Col>
 
