@@ -14,7 +14,7 @@ import {
   SiMongodb,
   SiNestjs,
   SiFlask
-} from "react-icons/di"
+} from "react-icons/si"
 
 function Techstack() {
   return (
