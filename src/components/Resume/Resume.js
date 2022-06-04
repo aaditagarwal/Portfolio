@@ -28,7 +28,7 @@ function Resume() {
               content={[
                 "Engineered Shipsy jobs platform for 100+ internal and external openings with administration portal providing complete recruitment facility deploying an architecture built with TypeScript, JavaScript and PostgreSQL.",
                 "Developed a role-based permission system using existing permission patterns across internal development platform for 300+ employees built with OAuth2 authentication and Internal Login API Authorization.",
-                "Designed and developed internal platform for configuring ETL(extract transfer load) systems for various clients and corresponding services across MongoDB and Redis databases using Flask and React based stack."
+                "Designed and developed internal platform for configuring ETL(extract transfer load) systems for various clients and corresponding services across MongoDB and Redis databases using Flask and React based stack.",
                 "Built business value calculators to provide clients with insights on potential savings using Shipsy services increasing client-base and outreach by 15% leveraging HubSpot CRM integration and TypeScript based system."
               ]}
             />
