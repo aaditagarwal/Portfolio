@@ -3,19 +3,38 @@ import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
+  DiPython,
   DiReact,
   DiNodejs,
-  DiPython,
-  DiGit,
-  DiPostgresql,
   DiMysql,
-  DiHtml5,
-  DiCss3
+  DiPostgresql,
 } from "react-icons/di";
+import { 
+  SiTypescript,
+  SiMongodb,
+  SiNestjs,
+  SiFlask
+} from "react-icons/di"
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiJavascript1 />
+        <div className="overlay">
+          <div className="fadeText">
+            JavaScript
+          </div>
+        </div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTypescript />
+        <div className="overlay">
+          <div className="fadeText">
+            TypeScript
+          </div>
+        </div>
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
         <div className="overlay">
@@ -49,10 +68,10 @@ function Techstack() {
         </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <SiMongodb />
         <div className="overlay">
           <div className="fadeText">
-            JavaScript
+            MongoDB
           </div>
         </div>
       </Col>
@@ -73,26 +92,18 @@ function Techstack() {
         </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiHtml5 />
+        <SiNestjs />
         <div className="overlay">
           <div className="fadeText">
-            HTML
+            NestJS
           </div>
         </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiCss3 />
+        <SiFlask />
         <div className="overlay">
           <div className="fadeText">
-            CSS
-          </div>
-        </div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-        <div className="overlay">
-          <div className="fadeText">
-            Git
+            Flask
           </div>
         </div>
       </Col>
