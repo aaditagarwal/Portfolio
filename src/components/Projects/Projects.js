@@ -9,7 +9,7 @@ import wellSAP from "../../Assets/Projects/wellSAP.png";
 import solveNet from "../../Assets/Projects/solveNet.png";
 import activeNet from "../../Assets/Projects/activeNet.png";
 import fitPred from "../../Assets/Projects/fitPred.png";
-import docMeta from "https://user-images.githubusercontent.com/43996118/163048767-a4689275-5390-4722-a053-d7f02a067868.png";
+import docMeta from "../../Assets/Projects/docMeta.png";
 
 function Projects() {
   return (
